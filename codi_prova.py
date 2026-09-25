@@ -1,3 +1,3 @@
 print("Hola Mundo!!!!!!!!!!!");
 
-print("Adios Mundo!!!!!!!!!!");
+print("Adios Mun");
