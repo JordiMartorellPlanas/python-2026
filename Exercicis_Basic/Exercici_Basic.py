@@ -55,16 +55,23 @@ print("3. Fes la divisió entera entre el nombre resultant i el nombre 2")
 print("4. El resultat hauria de ser 1")
 
 
-
+pi = 3.14159
+pi_rounded = round(pi)
+resultat = int(pi_rounded/2)
+print(f"{resultat}")
 
 print("--------------")
 
+
+"""
 print("\nExercici 6: Conversor de temperatura")
 print("Demana a l'usuari una temperatura en graus Celsius.")
 print("Converteix aquest valor a Fahrenheit amb la fórmula: F = (C * 9/5) + 32")
 print("Mostra els dos valors amb un missatge clar.")
 
-### Completa aquí
+temp = float(input("Introdueix la temperatura:" ))
+temp_far = (temp * 9)/5 + 32
+print(f"Temperatura en celsis: {temp} i en fahrenheit: {temp_far}")
 
 print("--------------")
 
@@ -73,12 +80,21 @@ print("Demana el total d'un compte i el percentatge de propina.")
 print("Calcula quant és la propina i el total final que s'ha de pagar.")
 print("Mostra els resultats amb 2 decimals.")
 
-### Completa aquí
+total = float(input("Introdueix el total: "))
+propina = float(input("Introdueix el percentatge de la propina: "))
+propina_final = (propina / 100) * total
+total_pagar = propina_final + total
+print(f"El total a pagar es de {total_pagar}")
 
 print("--------------")
-
+"""
 print("\nExercici 8: Validador de contrasenya simple")
 print("Demana una contrasenya a l'usuari.")
 print("Comprova si té almenys 8 caràcters.")
 print("Mostra 'Contrasenya vàlida' o 'Contrasenya no vàlida'.")
 
+clau = input("Introdueix la contrasenya: ")
+if len(clau) < 8:
+    print("Contrasenya vàlida")
+else:
+    print("Contrasenya no vàlida")
