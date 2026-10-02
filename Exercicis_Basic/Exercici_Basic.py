@@ -82,4 +82,3 @@ print("Demana una contrasenya a l'usuari.")
 print("Comprova si té almenys 8 caràcters.")
 print("Mostra 'Contrasenya vàlida' o 'Contrasenya no vàlida'.")
 
-### Completa aquí
