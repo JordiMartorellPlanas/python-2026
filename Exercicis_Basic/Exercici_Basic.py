@@ -94,7 +94,7 @@ print("Comprova si té almenys 8 caràcters.")
 print("Mostra 'Contrasenya vàlida' o 'Contrasenya no vàlida'.")
 
 clau = input("Introdueix la contrasenya: ")
-if len(clau) < 8:
+if len(clau) >= 8:
     print("Contrasenya vàlida")
 else:
     print("Contrasenya no vàlida")

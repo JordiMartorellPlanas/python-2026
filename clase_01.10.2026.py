@@ -6,7 +6,7 @@
 # Podemos importar módulos de Python para usarlos en nuestros programas.
 # En este caso, importamos el módulo "os" que nos da acceso a funciones
 # relacionadas con el sistema operativo
-import os
+"""import os
 # system() nos permite ejecutar un comando en la terminal
 # en este caso lo hacemos para limpiar la pantalla
 os.system("cls") # Windows
@@ -142,10 +142,16 @@ es_fin_de_semana = False
 ###
 # EJERCICIOS
 ###
-
+"""
 # Ejercicio 1: Determinar el mayor de dos números
 # Pide al usuario que introduzca dos números y muestra un mensaje
 # indicando cuál es mayor o si son iguales
+num1 = float("Introdueix el primer nombre\n")
+num2 = float("Introdueix el segon nombre\n")
+if num1 > num2:
+  print(f"El nombre 1: {num1} es mes gran que el nombre 2: {num2}")
+else:
+  print(f"El nombre 1: {num1} es mes petit o igual que el nombre 2: {num2}")
 
 
 # Ejercicio 2: Calculadora simple
