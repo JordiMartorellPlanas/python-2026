@@ -2,7 +2,7 @@
 # exercicis-basics.py
 # Exercicis per practicar els conceptes apresos a les lliçons.
 ###
-
+""""
 print("\nExercici 1: Imprimir missatges")
 print("Escriu un programa que imprimeixi el teu nom i la teva ciutat en línies separades.")
 
@@ -25,7 +25,7 @@ print(type(d))
 print(type(e))
 
 print("--------------")
-
+"""
 print("\nExercici 3: Conversió de tipus")
 print("Converteix la cadena \"12345\" a un enter i després a un float.")
 print("Converteix el float 3.99 a un enter. Què passa?")
@@ -34,7 +34,7 @@ print(int(float("12345")))
 print(int(3.99))
 
 print("--------------")
-
+"""
 print("\nExercici 4: Variables")
 print("Crea variables per al teu nom, edat i alçada.")
 print("Utilitza f-strings per imprimir una presentació.")
@@ -63,7 +63,7 @@ print(f"{resultat}")
 print("--------------")
 
 
-"""
+
 print("\nExercici 6: Conversor de temperatura")
 print("Demana a l'usuari una temperatura en graus Celsius.")
 print("Converteix aquest valor a Fahrenheit amb la fórmula: F = (C * 9/5) + 32")
@@ -87,7 +87,7 @@ total_pagar = propina_final + total
 print(f"El total a pagar es de {total_pagar}")
 
 print("--------------")
-"""
+
 print("\nExercici 8: Validador de contrasenya simple")
 print("Demana una contrasenya a l'usuari.")
 print("Comprova si té almenys 8 caràcters.")
@@ -98,3 +98,4 @@ if len(clau) >= 8:
     print("Contrasenya vàlida")
 else:
     print("Contrasenya no vàlida")
+"""
