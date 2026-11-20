@@ -1,31 +1,65 @@
 ###
 # EXERCICIS (for)
 ###
-
+"""
 # Exercici 1: Imprimir números parells
 # Imprimeix tots els números parells del 2 al 20 (inclosos) fent servir un bucle for.
+llista = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+for nombre in llista:
+
+    if(nombre%2 == 0):
+        print(nombre)
+
+
 
 # Exercici 2: Calcular la mitjana d'una llista
 # Donada la llista de números següent:
-# numeros = [10, 20, 30, 40, 50]
+numeros = [10, 20, 30, 40, 50]
 # Calcula la mitjana dels números fent servir un bucle for.
+suma = 0
+index = 0
+for nombre in numeros:
+    suma += nombre
+    index += 1
+
+print(suma/index)
 
 # Exercici 3: Buscar el màxim d'una llista
 # Donada la llista de números següent:
-# numeros = [15, 5, 25, 10, 20]
+numeros = [15, 5, 25, 10, 20]
 # Troba el número màxim de la llista fent servir un bucle for.
+maxim = 0
+for nombre in numeros:
+    if(nombre > maxim):
+        maxim = nombre
+print(f"El maxim es {maxim}")
+
 
 # Exercici 4: Filtrar cadenes per longitud
 # Donada la llista de paraules següent:
-# paraules = ["casa", "arbre", "sol", "elefant", "lluna"]
+paraules = ["casa", "arbre", "sol", "elefant", "lluna"]
 # Crea una llista nova que contingui només les paraules amb més de 5 lletres
 # fent servir un bucle for i list comprehension.
+llista = []
+for paraula in paraules:
+    if(len(paraula) > 5):
+        llista.append(paraula)
+
+print(llista)
+
+"""
 
 # Exercici 5: Comptar paraules que comencen per una lletra
 # Donada la llista de paraules següent:
-# paraules = ["casa", "arbre", "sol", "elefant", "lluna", "cotxe"]
+paraules = ["casa", "arbre", "sol", "elefant", "lluna", "cotxe"]
 # Demana a l'usuari que introdueixi una lletra.
 # Compta quantes paraules de la llista comencen per aquesta lletra (sense diferenciar majúscules/minúscules).
+lletra = input(str(print("Introdueix una lletra: ")))
+suma = 0
+for paraula in paraules:
+    if(paraula[0] == lletra.lower()):
+        suma += 1
+print(f"El nombre de paraules amb la lletra {lletra} es de {suma}")
 
 # Exercici 6: Mesures de tensió d'un sensor
 # Durant una prova s'han registrat les tensions següents (en volts):
